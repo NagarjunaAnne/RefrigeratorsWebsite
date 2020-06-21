@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<!-- This website template is created by: Nagarjuna Anne c0750094 2/8/2019 -->
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="css/training.css">
+  <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+	<script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="scripts/jquery.highlight.js"></script>
+	<script src="scripts/jquery.highlight.js"></script>
+<title>AquaRef</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script>
+	$(document).ready(function(){
+    	var searchTerm;
+    	$("#btnSearch").click(function() {
+			
+			// Set the search term
+			searchTerm = "";
+			if ($("#search").val() == "") { alert("You must enter one or more tags!"); }
+			else {
+				searchTerm = $("#search").val();
+				// Build the URL based on the search term
+				var url = "http://api.flickr.com/services/feeds/photos_public.gne?" +
+	    			  	  "format=json&jsoncallback=?&tags=" + searchTerm + "&tagmode=all";
+	
+				$.getJSON(url, function(data){
+					var html = "";
+					$.each(data.items, function(i, item){
+						
+						html += "<img id ='photo' src=" + item.media.m + ">";
+						
+					});
+					$("#photos").html(html);
+				});
+			}
+        });
+    });
+    </script>
+    
+    <script>
+    	$(document).ready(function() {
+		$("#vecta_menu").highlightMenu({
+        bgColor: '#427e8c', 
+        color: '#ffffff'
+    });
+}); 
+
+
+    </script>
+    
+    <script>
+    	$(document).ready(function() {
+			$("#accordion").accordion(
+				{ 
+					event: "mouseover",
+					heightStyle: "content",
+					collapsible: true 
+				});
+	    });
+	</script>
+	
+	
+</head>
+<body>
+	<div id="container">
+<!-- Use the header area for the website name -->
+<header>
+	<a href="index.html"><img src="images/flicker.jpg" alt="Training Schedule" height="350" width="1500"></a>
+	</header>
+<!-- Use the nav area to add hyperlinks to other pages within the websites -->
+<nav>
+<ul id ="vecta_menu">
+<li><a href="index.html">Home  &nbsp; &nbsp;</a></li>
+<li><a href="about.html">About AquaRef &nbsp; &nbsp;</a></li>
+<li><a href="team.html">Meet our Team &nbsp; &nbsp;</a></li>
+<li><a href=" http://12.42.204.30:7252/prodv1.html">Products &nbsp; &nbsp;</a></li>
+<!-- <li><a href=" http://12.42.204.30:7252/prodv2.html">Orders &nbsp; &nbsp;</a></li> -->
+<li><a href="training.html">Search &nbsp; &nbsp;</a></li>
+<li><a href="contact.html">Contact Us &nbsp; &nbsp;</a></li>
+<!-- <li><a href="styleguide.html">Style &nbsp; &nbsp;</a></li> -->
+</ul>
+</nav>
+
+<!-- Use the main area to add the main content of the webpages -->
+<main>
+		Search by tags: <input type="text" size="30" id="search">
+		<input type="button" value="Search" id="btnSearch">
+	
+		<h1>Flickr Results</h1>
+		<div id="photos"></div>
+
+</main>
+<!-- use the footer area to add webpages footer content -->
+<footer> 
+&copy; Copyright 2099. All Rights Reserved.<br>
+<a href="mailto:aquaref@aquaref.com">Request Information</a><br>
+Nagarjuna Anne &nbsp; &nbsp; c0750094
+</footer>
+</div>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<!-- This website template is created by: Nagarjuna Anne c0750094 2/8/2019 -->
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="css/contact.css">
+	<script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+	<script src="jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+	<script src="scripts/jquery.highlight.js"></script>
+	<script src="scripts/jquery.validate.min.js"></script>
+	<script src="scripts/additional-methods.min.js"></script>	
+	<script src="scripts/contact.js"></script>
+<title>AquaRef</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<script>
+    	$(document).ready(function() {
+		$("#vecta_menu").highlightMenu({
+        bgColor: '#427e8c', 
+        color: '#ffffff'
+    });
+}); 
+
+
+    </script>
+    
+    <script>
+    	$(document).ready(function() {
+			$("#accordion").accordion(
+				{ 
+					event: "mouseover",
+					heightStyle: "content",
+					collapsible: true 
+				});
+	    });
+	</script>
+	
+	
+</head>
+<body>
+	<div id="container">
+<!-- Use the header area for the website name -->
+<header>
+	<a href="index.html"><img src="images/contactusimg.jpg" alt="Contact Us" height="350" width="1500"></a>
+	</header>
+<!-- Use the nav area to add hyperlinks to other pages within the websites -->
+<nav>
+<ul id ="vecta_menu">
+<li><a href="index.html">Home  &nbsp; &nbsp;</a></li>
+<li><a href="about.html">About AquaRef &nbsp; &nbsp;</a></li>
+<li><a href="team.html">Meet our Team &nbsp; &nbsp;</a></li>
+<li><a href=" http://12.42.204.30:7252/prodv1.html">Products &nbsp; &nbsp;</a></li>
+<!-- <li><a href=" http://12.42.204.30:7252/prodv2.html">Orders &nbsp; &nbsp;</a></li> -->
+<li><a href="training.html">Search &nbsp; &nbsp;</a></li>
+<li><a href="contact.html">Contact Us &nbsp; &nbsp;</a></li>
+<!-- <li><a href="styleguide.html">Style &nbsp; &nbsp;</a></li> -->
+</ul>
+</nav>
+
+<!-- Use the main area to add the main content of the webpages -->
+<main>
+	<form action="response.html" method="get"
+			name="reservation_form" id="reservation_form">
+		<h2 class="color">Contact AquaRef</h2>
+		<div>
+			<label for="name"><span class="red">*</span>Name</label>
+			<input type="text" id="firstName" placeholder="Enter First Name and Last Name" name="name" id="name" class="form-control" required autofocus>
+		</div>	
+				
+		<div>
+			<label for="phone"><span class="red">*</span> Telephone:</label>	
+			<input type="tel" placeholder="Enter your Phone Number" id="phone" name="phone" required>
+		</div>
+		<div>
+			<label for="email"><span class="red">*</span>Email</label>
+			<input type="text"  placeholder="Enter your Email Address" name="email" id="email" required autofocus  class="form-control" required>
+		</div>
+		<fieldset> 
+		
+			<div>
+			<legend><span class="red">*</span>Do you want Home delivery ?</legend>
+			<input type="checkbox" name="delivery" value="yes"> Yes
+			<input type="checkbox" name="delivery" value="no"> No
+			</div>
+		</fieldset>
+		
+		<div>
+			<label for="address"><span class="red">*</span>Address</label>
+			<input type="address" id="address" name="address"  placeholder="Enter Address"  required class="form-control" required>
+		</div>
+		<div>
+				<label for="city"><span class="red">*</span>City</label>
+				<input type="text" name="city" id="city" placeholder="Enter your City"  required class="form-control" required>
+		</div>
+		<div>
+			<label for="state"><span class="red">*</span>State</label>
+      <input type="text" name="state" id="state" required><br>
+		</div>
+		<div>
+			<label for="zip"><span class="red">*</span>Zip Code</label>
+			<input type="text" name="zip" id="zip" placeholder="Enter your Zip code" class="form-control" required>
+		</div>
+		<div class="referenceclass">
+		<label for="reference">How did you know about us:</label>
+			<select name="reference" id="reference">
+				<option value="friend">Friend</option>
+				<option value="google">Google</option>
+				<option value="social">Social Media</option>
+				<option value="other">Other</option>
+			</select>
+		</div>
+	
+		
+		<div>
+			<label for="country">Country</label>
+			<select id="country" name="country">
+			  <option value="australia">Australia</option>
+			  <option value="canada">Canada</option>
+			  <option value="usa">USA</option>
+			</select>
+		</div>	
+		<div>
+			<label for="questions">Questions:</label>
+			<textarea type="text-area" id="questions" name="questions" rows="3"  cols="25"></textarea>
+		</div>	
+		<div class="buttons">
+			<input class="button" type="submit" value="Submit">
+			<input type="reset" value="Reset">
+		</div>
+		</fieldset>
+	</form>
+</main>
+<!-- use the footer area to add webpages footer content -->
+<footer> 
+&copy; Copyright 2099. All Rights Reserved.<br>
+<a href="mailto:aquaref@aquaref.com">Request Information</a><br>
+Nagarjuna Anne &nbsp; &nbsp; c0750094
+</footer>
+</div>
+</body>
+</html>

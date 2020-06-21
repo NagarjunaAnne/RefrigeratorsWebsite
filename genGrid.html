@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script	src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="http://12.42.204.30:7002/jquery.jtable.js"></script>
+<script src="http://12.42.204.30:7002/scripts/helpers.js"></script>
+<link href="http://12.42.204.30:7002/themes/lightcolor/red/jtable.css" rel="stylesheet">
+
+                                                <!-- The above code should not be changed -->
+
+<link href="css/myStyles.css" rel="stylesheet"> <!-- Modify myStyles.css to add additional styles -->
+
+<title>Cars</title>                             <!-- Modify title for your application -->
+
+<script>
+	$(document).ready(function() {
+		$('#container1').jtable({
+			title : 'Car Listing',
+			paging : true,
+			pageSize : 15,
+			sorting : true,
+			defaultSorting : 'model_year DESC',
+			actions : {
+				listAction : 'genJson2.rpgle?jtView=carsV1'
+			},
+			fields : {
+				car_make : {
+					title : 'Car make',
+					width : '20%',
+					list : true
+				},
+				car_model : {
+					title : 'Car model',
+					width : '20%',
+					list : true
+				},
+				model_year : {
+					title : 'Year',
+					width : '10%',
+					list : true
+				},
+				color : {
+					title : 'Color',
+					width : '20%',
+					list : true,
+				},
+				odometer : {
+					title : 'Odometer',
+					width : '15%',
+					list : true,
+				},
+				cost_price : {
+					title : 'Cost price',
+					width : '15%',
+					list : true,
+					display : function(data) {
+						return formatCurrency(data.record.cost_price)
+					},
+				}
+			}
+		});
+		$('#container1').jtable('load');
+	});
+</script>
+</head>
+
+<body>
+  <div id="container1"></div>
+</body>
+</html>

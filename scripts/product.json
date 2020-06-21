@@ -1,0 +1,268 @@
+{"products":[
+	{
+		"name": "Side-by-Side Refrigerators",
+		"stock": "1000",
+		"quantity": "100",
+		"capacity": "24.5",
+		"color": "Silver"		
+	},
+	{
+		"name": "Whirlpool French Door Refrigerator",
+		"stock": "1500",
+		"quantity": "500",
+		"capacity": "25",
+		"color": "White"		
+	},
+	{
+		"name": "Multi Band",
+		"stock": "1736",
+		"quantity": "220",
+		"capacity": "Large",
+		"color": "Black"		
+	},
+	{
+		"name": "Radio with amplifier",
+		"stock": "1936",
+		"quantity": "500",
+		"capacity": "Medium",
+		"color": "Red"		
+	},
+	{
+		"name": "BlasterJax",
+		"stock": "1296",
+		"quantity": "225",
+		"capacity": "Medium",
+		"color": "Green"		
+	},
+	{
+		"name": "HardWell",
+		"stock": "1963",
+		"quantity": "789",
+		"capacity": "Large",
+		"color": "Magenta"		
+	},
+	{
+		"name": "Lakme Mascarra",
+		"stock": "2106",
+		"quantity": "199",
+		"capacity": "Small",
+		"color": "Blue"		
+	},
+	{
+		"name": "Single Band mand",
+		"stock": "1996",
+		"quantity": "210",
+		"capacity": "Medium",
+		"color": "Red"		
+	},
+	{
+		"name": "Dual Band Peng",
+		"stock": "1736",
+		"quantity": "125",
+		"capacity": "Large",
+		"color": "Black"		
+	},
+	{
+		"name": "Single Frequency attenuator",
+		"stock": "2936",
+		"quantity": "520",
+		"capacity": "Small",
+		"color": "Red"		
+	},
+	{
+		"name": "Dual Band Peng",
+		"stock": "1736",
+		"quantity": "125",
+		"capacity": "Large",
+		"color": "Black"		
+	},
+	{
+		"name": "Single Band attentuator",
+		"stock": "5931",
+		"quantity": "459",
+		"capacity": "small",
+		"color": "Gray"		
+	},
+	{
+		"name": "Dual Band Peng",
+		"stock": "1736",
+		"quantity": "125",
+		"capacity": "Large",
+		"color": "Black"		
+	},
+	{
+		"name": "Single Band radio",
+		"stock": "2195",
+		"quantity": "400",
+		"capacity": "small",
+		"color": "Black"		
+	},
+	{
+		"name": "Dual Band radio with amplifier",
+		"stock": "9736",
+		"quantity": "215",
+		"capacity": "Medium",
+		"color": "Green"		
+	},
+	{
+		"name": "Single Band Leveler",
+		"stock": "1906",
+		"quantity": "410",
+		"capacity": "Small",
+		"color": "Gray"		
+	},
+	{
+		"name": "Motorola doubler",
+		"stock": "8736",
+		"quantity": "215",
+		"capacity": "Medium",
+		"color": "Pink"		
+	},
+	{
+		"name": "Eye shadow pallet",
+		"stock": "1936",
+		"quantity": "520",
+		"capacity": "Large",
+		"color": "Black"		
+	},
+	{
+		"name": "Lions Radio",
+		"stock": "3736",
+		"quantity": "125",
+		"capacity": "Large",
+		"color": "Orange"		
+	},
+	{
+		"name": "H And M",
+		"stock": "1996",
+		"quantity": "512",
+		"capacity": "Medium",
+		"color": "Wine Red"		
+	},
+	{
+		"name": "Stitiches",
+		"stock": "9736",
+		"quantity": "336",
+		"capacity": "Large",
+		"color": "Black"		
+	},
+	{
+		"name": "Single Band radio",
+		"stock": "1936",
+		"quantity": "500",
+		"capacity": "Medium",
+		"color": "Red"		
+	},
+	{
+		"name": "Dual Band Peng",
+		"stock": "1736",
+		"quantity": "125",
+		"capacity": "Large",
+		"color": "Black"		
+	},
+	{
+		"name": "double layerered Band",
+		"stock": "1996",
+		"quantity": "590",
+		"capacity": "Large",
+		"color": "Black"		
+	},
+	{
+		"name": "Dual Band Peng",
+		"stock": "2196",
+		"quantity": "519",
+		"capacity": "Large",
+		"color": "Murron"		
+	},
+	{
+		"name": "Single Band radio",
+		"stock": "1936",
+		"quantity": "500",
+		"capacity": "Medium",
+		"color": "Red"		
+	},
+	{
+		"name": "Dual Band Peng",
+		"stock": "1736",
+		"quantity": "125",
+		"capacity": "Large",
+		"color": "Black"		
+	},
+	{
+		"name": "Single Band attentutor",
+		"stock": "9568",
+		"quantity": "900",
+		"capacity": "Large",
+		"color": "Black"		
+	},
+	{
+		"name": "Dual Band Radio with Band",
+		"stock": "1736",
+		"quantity": "125",
+		"capacity": "Large",
+		"color": "Purple"		
+	},
+	{
+		"name": "Single Attenuator",
+		"stock": "9963",
+		"quantity": "419",
+		"capacity": "Small",
+		"color": "Gray"		
+	},
+	{
+		"name": "Dual Band Brother",
+		"stock": "9636",
+		"quantity": "985",
+		"capacity": "Medium",
+		"color": "Black"		
+	},
+	{
+		"name": "Single Band Peng",
+		"stock": "7896",
+		"quantity": "519",
+		"capacity": "Small",
+		"color": "Black"		
+	},
+	{
+		"name": "Dual Band Peng",
+		"stock": "9693",
+		"quantity": "216",
+		"capacity": "Large",
+		"color": "Red"		
+	},
+	{
+		"name": "Single Band Multi-frequency",
+		"stock": "1968",
+		"quantity": "498",
+		"capacity": "small",
+		"color": "Red"		
+	},
+	{
+		"name": "Dual Band Attenuator",
+		"stock": "8963",
+		"quantity": "216",
+		"capacity": "Large",
+		"color": "Black"		
+	},
+	{
+		"name": "Single Band radio",
+		"stock": "1936",
+		"quantity": "500",
+		"capacity": "Medium",
+		"color": "Red"		
+	},
+	{
+		"name": "Dual Band Amplifier Radio",
+		"stock": "1736",
+		"quantity": "125",
+		"capacity": "Large",
+		"color": "Black"		
+	},
+	{
+		"name": "Single Band radio without amplifier",
+		"stock": "2196",
+		"quantity": "415",
+		"capacity": "Medium",
+		"color": "Red"		
+	}
+]}

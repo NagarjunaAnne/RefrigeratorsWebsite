@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script	src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+<script src="http://12.42.204.30:7002/jquery.jtable.js"></script>
+<script src="http://12.42.204.30:7002/scripts/helpers.js"></script>
+<link href="http://12.42.204.30:7002/themes/lightcolor/blue/jtable.css" rel="stylesheet">
+
+                                                <!-- The above code should not be changed -->
+
+<link href="css/myStyles.css" rel="stylesheet"> <!-- Modify myStyles.css to add additional styles -->
+
+<title>AquaRef</title>                             <!-- Modify title for your application -->
+
+<script>
+	$(document).ready(function() {
+		$('#container2').jtable({
+			title : 'Orders',
+			paging : true,
+			pageSize : 9,
+			sorting : true,
+			defaultSorting : 'customer_name DESC',
+			actions : {
+				listAction : 'genJson2.rpgle?jtView=PRODV2'
+			},
+			fields : {
+				customer_name : {
+					title : 'Name',
+					width : '20%',
+					list : true
+				},
+				order_date : {
+					title : 'Order Date',
+					width : '20%',
+					list : true
+				},
+				order_id : {
+					title : 'Order ID',
+					width : '10%',
+					list : true
+				},
+				product_id : {
+					title : 'Product ID',
+					width : '10%',
+					list : true
+				},
+				description : {
+					title : 'Description',
+					width : '15%',
+					list : true,
+				},
+				qty : {
+					title : 'Quantity',
+					width : '10%',
+					list : true
+				},
+				price : {
+					title : 'Price',
+					width : '20%',
+					list : true,
+				},
+//				cost_price : {
+//					title : 'Cost price',
+//					width : '15%',
+//					list : true,
+//					display : function(data) {
+//						return formatCurrency(data.record.cost_price)
+//					},
+//				}
+			}
+		});
+		$('#container2').jtable('load');
+	});
+</script>
+</head>
+
+<body>
+  <div id="container2">
+  	<!-- Use the header area for the website name -->
+<header>
+	<a href="index.html"><img src="images/banner_img.jpg" alt="AquaRef Logo" height="350" width="1500"></a>
+	</header>
+<!-- Use the nav area to add hyperlinks to other pages within the websites -->
+<nav>
+<ul>
+<li><a href="index.html">Home  &nbsp; &nbsp;</a></li>
+<li><a href="about.html">About AquaRef &nbsp; &nbsp;</a></li>
+<li><a href="team.html">Meet our Team &nbsp; &nbsp;</a></li>
+<li><a href=" http://12.42.204.30:7252/prodv1.html">Products &nbsp; &nbsp;</a></li>
+<li><a href=" http://12.42.204.30:7252/prodv2.html">Orders &nbsp; &nbsp;</a></li>
+<li><a href="training.html">Training Schedule &nbsp; &nbsp;</a></li>
+<li><a href="contact.html">Contact Us &nbsp; &nbsp;</a></li>
+<li><a href="styleguide.html">Style &nbsp; &nbsp;</a></li>
+</ul>
+</nav>
+
+<!-- Use the main area to add the main content of the webpages -->
+<main>
+	
+</main>
+</div>
+
+<!-- use the footer area to add webpages footer content -->
+<footer> 
+&copy; Copyright 2099. All Rights Reserved.<br>
+<a href="mailto:aquaref@aquaref.com">Request Information</a><br>
+Nagarjuna Anne &nbsp; &nbsp; c0750094
+</footer>
+
+</body>
+</html>
